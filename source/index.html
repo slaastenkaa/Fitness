@@ -41,7 +41,7 @@
             </ul>
             <p>омск</p>
             <h1>Фитнес центр</h1>
-            <button class="header__content--button button">Купить абонемент</button>
+            <a class="header__content--button button link" href="#subscriptions">Купить абонемент</a>
           </div>
           <div class="header__content--image">
             <picture>
@@ -57,7 +57,59 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
+      <section class="gym">
+        <div class="container gym__container">
+          <div class="gym__content">
+            <h2>Тренажерный зал</h2>
+            <h4>Просторный зал площадью 900 кв/м</h4>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий. </p>
+          </div>
+          <div class="gym__image">
+            <div class="gym__image-main">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/img-gym-mobil.webp 1x, img/img-gym-mobil@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/img-gym-tablet.webp, img/img-gym-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-gym.webp, img/img-gym@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/img-gym-mobile.jpg 1x, img/img-gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/img-gym-tablet.jpg, img/img-gym-tablet@2x.jpg 2x">
+                <img src="img/img-gym.jpg" width="660" height="401" alt="Тренажерный зал, фитнес центра 'SuperGym'."
+                  srcset="img/img-gym@2x.jpg 2x">
+              </picture>
+            </div>
+            <div class="gym__image-video">
+              <figure data-figure-video>
+                <div class="gym__image-video-background"></div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/img-gym-second-mobil.webp 1x, img/img-gym-second-mobil@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/img-gym-second-tablet.webp, img/img-gym-second-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/img-gym-second.webp, img/img-gym-second@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/img-gym-second-mobile.jpg 1x, img/img-gym-second-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/img-gym-second-tablet.jpg, img/img-gym-second-tablet@2x.jpg 2x">
+                  <img src="img/img-gym-second.jpg" width="364" height="228" alt="Тренажерный зал, фитнес центра 'SuperGym'."
+                    srcset="img/img-gym-second@2x.jpg 2x">
+                </picture>
+                <button class="gym__image-video__button" data-button-video>
+                  <svg width="17" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./img/sprite.svg#icon-play"></use>
+                  </svg>
+                  <span class="visually-hidden">Посмотреть видео.</span>
+                </button>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscriptions" id="subscriptions"></section>
     </main>
     <footer class="footer">
       <div class="container"></div>

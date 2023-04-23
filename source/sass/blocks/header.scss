@@ -13,7 +13,7 @@
 
 .header__content--main {
   display: grid;
-  margin-top: 20px;
+  margin-top: 16px;
   grid-template-columns: 1fr 1fr;
   gap: 0 17px;
 }
@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin-top: 98px;
+  margin-top: 102px;
   grid-row: 1 / 4;
 }
 
@@ -67,19 +67,10 @@
 .header__content--button {
   grid-column: 2;
   display: flex;
-  width: 95%;
-  margin-left: 14px;
+  width: 92%;
+  margin-left: 18px;
   justify-content: center;
-  transition: $trans-easeinout;
   transform: translate(0px, -2px);
-}
-
-.header__content--button:hover,
-.header__content--button:focus,
-.header__content--button:active {
-  color: $color-sapphire-opacity;
-  background-color: $color-default-white;
-  transform: $trans-scale3d translate(0px, -2px);
 }
 
 @media (max-width: $vp-1023) {
@@ -96,12 +87,12 @@
   }
 
   .header__content--main {
-    margin-top: -9px;
+    margin-top: -12px;
     gap: 0 25px;
   }
 
   .header__content--list {
-    margin-top: 53px;
+    margin-top: 56px;
   }
 
   .header__content--item {
@@ -118,6 +109,8 @@
   }
 
   .header__content--main h1 {
+    width: min-content;
+    margin-left: auto;
     margin-top: 7px;
     margin-bottom: 5px;
     font-size: 72px;
@@ -130,19 +123,14 @@
     margin: auto;
     padding: 19px;
     width: 100%;
-    transform: translate(0, -12px);
-  }
-
-  .header__content--button:hover,
-  .header__content--button:focus,
-  .header__content--button:active {
-    transform: $trans-scale3d translate(0, -12px);
+    transform: translate(0, -14px);
   }
 }
 
 @media (max-width: $vp-767) {
   .header {
     padding-top: 14px;
+    padding-bottom: 96px;
   }
 
   .header__content {
@@ -159,7 +147,8 @@
   }
 
   .header__content--list {
-    transform: translate(7px, 33px);
+    transform: translate(-3px, 19px);
+    width: 110%;
   }
 
   .header__content--main p {
@@ -168,7 +157,7 @@
   }
 
   .header__content--main h1 {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     font-size: 72px;
     line-height: 86px;
     transform: translate(0, 0);
@@ -176,12 +165,7 @@
 
   .header__content--button {
     grid-column: 1/-1;
+    padding: 20px;
     transform: translate(0, 0);
-  }
-
-  .header__content--button:hover,
-  .header__content--button:focus,
-  .header__content--button:active {
-    transform: $trans-scale3d translate(0, 0);
   }
 }
