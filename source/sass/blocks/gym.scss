@@ -1,13 +1,14 @@
 .gym {
   padding-top: 120px;
-  padding-left: 60px;
 }
 
 .gym__container {
   display: grid;
-  //   grid-template-columns: 1fr 1.85fr;
-  //   gap: 83px;
-  grid-template-columns: 1fr 2.1fr;
+  grid-template-columns: 1fr 1.8fr;
+}
+
+.gym__content {
+  padding-left: 60px;
 }
 
 .gym__content h2 {
@@ -121,7 +122,6 @@
 @media (max-width: $vp-1023) {
   .gym {
     padding-top: 62px;
-    padding-left: 0;
   }
 
   .gym__container {
@@ -131,6 +131,7 @@
 
   .gym__content {
     text-align: center;
+    padding-left: 0;
   }
 
   .gym__content h2 {
@@ -195,15 +196,12 @@
     mask: radial-gradient(34px, $color-transparent 100%, $color-default-white);
   }
 
-
   .gym__image-video__button:hover::after,
   .gym__image-video__button:focus::after,
   .gym__image-video__button:active::after {
     mask: radial-gradient(26px, $color-transparent 100%, $color-default-white);
   }
-
 }
-
 
 @media (max-width: $vp-767) {
   .gym {

@@ -1,0 +1,31 @@
+.subscriptions {
+  position: relative;
+  margin-top: -24px;
+  padding-top: 75px;
+  padding-bottom: 80px;
+  background-color: $color-ghost-white;
+}
+
+.subscriptions__image {
+  position: absolute;
+  right: 0;
+  bottom: -149px;
+  width: 287px;
+  overflow: hidden;
+}
+
+.subscriptions h2 {
+  margin-bottom: 16px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  transform: translate(-2px, 0);
+}
+
+@media (max-width: $vp-1023) {}
+
+@media (max-width: $vp-767) {}
