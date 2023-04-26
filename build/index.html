@@ -114,9 +114,9 @@
           <h2>Абонементы</h2>
           <div class="subscriptions__tabs tabs" data-tabs="parent" data-delay="300">
             <div class="tabs__controls" data-tabs="controls">
-              <button class="tabs__control btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
-              <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 месяцев</button>
-              <button class="tabs__control btn" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+              <button class="tabs__control" type="button" data-tabs="control" data-index="0">1 месяц</button>
+              <button class="tabs__control" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+              <button class="tabs__control" type="button" data-tabs="control" data-index="2">12 месяцев</button>
             </div>
             <div class="tabs__content" data-tabs="content">
               <ul class="tabs__element tabs__list list" data-tabs="element">
@@ -240,7 +240,43 @@
           </picture>
         </div>
       </section>
-      <section class="games"></section>
+      <section class="games">
+        <div class="container games__container">
+          <div class="games__invite">
+            <div class="games__invite-info">
+              <h2>SUPER GAMES</h2>
+              <dl class="games__invite-info-table">
+                <div class="games__invite-info-date">
+                  <dt>Дата</dt>
+                  <dd>
+                    <span>7</span>
+                    <small>Марта <br> 2019</small>
+                </dd>
+                </div>
+                <div class="games__invite-info-time">
+                  <dt>Время</dt>
+                  <dd>12:00</dd>
+                </div>
+              </dl>
+            </div>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <a class="games__invite-button button" href="#">заполнить заявку</a>
+          </div>
+          <div class="games__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/img-super-games-man.webp 1x, img/img-super-games-man@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/img-super-games-man-tablet.webp, img/img-super-games-man-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/img-super-games-man.webp, img/img-super-games-man@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/img-super-games-man-mobile.jpg 1x, img/img-super-games-man-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/img-super-games-man-tablet.jpg, img/img-super-games-man-tablet@2x.jpg 2x">
+              <img src="img/img-gym.jpg" width="660" height="500" alt="Тренажерный зал, фитнес центра 'SuperGym'."
+                srcset="img/img-gym@2x.jpg 2x">
+            </picture>
+          </div>
+        </div>
+      </section>
       <section class="trainers"></section>
       <section class="advantages"></section>
       <section class="stock"></section>

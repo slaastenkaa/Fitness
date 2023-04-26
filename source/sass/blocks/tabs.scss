@@ -70,7 +70,6 @@
 
 .tabs__content {
   margin-bottom: 40px;
-
   transition: height 0.3s;
 }
 
@@ -99,12 +98,6 @@
 .tabs__item:active {
   border-image: $red-to-blue-numb-third;
   border-image-slice: 1;
-
-  // box-sizing: border-box;
-  // background-position: 0px 0px, 100% 0;
-  // background-repeat: no-repeat;
-  // background-size: 17px 100%;
-  // background-image: $red-to-blue-numb-second;
 }
 
 .tabs__item h3 {
@@ -189,7 +182,7 @@
 }
 
 
-@media (max-width: $vp-1023) {
+@media (max-width: $vp-1199) {
   .tabs__controls {
     margin: auto auto 42px;
     gap: 5px;

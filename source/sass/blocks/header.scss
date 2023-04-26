@@ -73,7 +73,7 @@
   transform: translate(0px, -2px);
 }
 
-@media (max-width: $vp-1023) {
+@media (max-width: $vp-1199) {
   .header {
     padding-top: 34px;
     padding-bottom: 95px;
@@ -122,8 +122,8 @@
   .header__content--button {
     margin: auto;
     padding: 19px;
-    width: 100%;
-    transform: translate(0, -14px);
+    width: 96%;
+    transform: translate(0, -15px);
   }
 }
 
@@ -166,6 +166,7 @@
   .header__content--button {
     grid-column: 1/-1;
     padding: 20px;
+    width: 98%;
     transform: translate(0, 0);
   }
 }

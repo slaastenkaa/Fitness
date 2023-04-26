@@ -119,7 +119,7 @@
   mask: radial-gradient(35px, $color-transparent 100%, $color-default-white);
 }
 
-@media (max-width: $vp-1023) {
+@media (max-width: $vp-1199) {
   .gym {
     padding-top: 62px;
   }
@@ -171,12 +171,12 @@
   }
 
   .gym__image-video img {
-    width: 266px;
+    width: 100%;
     height: auto;
   }
 
   .gym__image-video iframe {
-    width: 266px;
+    width: 100%;
     height: auto;
   }
 
