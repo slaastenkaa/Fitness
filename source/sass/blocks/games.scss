@@ -128,7 +128,7 @@
 @media (max-width: $vp-1199) {
   .games {
     padding-top: 101px;
-    padding-bottom: 110px;
+    padding-bottom: 70px;
   }
 
   .games__invite {
@@ -209,7 +209,9 @@
 
 @media (max-width: $vp-767) {
   .games {
+    margin-bottom: 30px;
     padding-top: 69px;
+    padding-bottom: 33px;
   }
 
   .games__container {
@@ -221,7 +223,7 @@
   }
 
   .games__image {
-    min-height: 132%;
+    min-height: 100%;
     object-fit: cover;
   }
   .games__image img {
