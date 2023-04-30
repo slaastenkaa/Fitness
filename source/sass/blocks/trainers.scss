@@ -56,6 +56,10 @@
 
 
 @media (max-width: $vp-1199) {
+  .trainers {
+    padding-bottom: 84px;
+  }
+
   .trainers__container h2 {
     margin-top: 30px;
     margin-bottom: 15px;
@@ -71,6 +75,10 @@
 }
 
 @media (max-width: $vp-767) {
+  .trainers {
+    padding-bottom: 52px;
+  }
+
   .trainers__container h2 {
     margin-bottom: 26px;
     font-size: 32px;

@@ -2,7 +2,7 @@ export function initSlider() {
   const staffSlider = new Swiper('.trainers__slider', {
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 33,
     // centeredSlides: true,
     grabCursor: true, // менять иконку курсора
     autoplay: {
