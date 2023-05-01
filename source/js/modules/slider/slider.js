@@ -1,5 +1,5 @@
 export function initSlider() {
-  const staffSlider = new Swiper('.trainers__slider', {
+  const trainersSlider = new Swiper('.trainers__slider', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 33,
@@ -27,6 +27,22 @@ export function initSlider() {
         slidesPerView: 4,
         spaceBetween: 40,
       },
+    },
+  });
+
+  const reviewsSlider = new Swiper('.reviews__slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 33,
+    centeredSlides: true,
+    grabCursor: true, // менять иконку курсора
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    // speed: 400,
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
     },
   });
 };

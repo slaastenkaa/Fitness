@@ -45,6 +45,9 @@
 .slider__item-picture {
   grid-row: 1/-1;
   grid-column: 1/-1;
+  min-height: 294px;
+  width: auto;
+  background-color: $color-chambray;
 }
 
 .slider__item-picture img {
@@ -123,6 +126,37 @@
   border-radius: 50%;
 }
 
+.slider__button {
+  background-color: $color-transparent;
+  border: none;
+  outline: none;
+}
+
+.slider__button svg {
+  color: $color-dark-grey;
+  transition: $trans-easeinout;
+}
+
+.slider__button:hover svg,
+.slider__button:focus svg,
+.slider__button:active svg {
+  color: $color-sapphire;
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.slider__button.swiper-button-prev {
+  left: 41px;
+}
+
+.slider__button.swiper-button-next {
+  right: 41px;
+  transform: rotate(180deg);
+}
+
+.slider__button::after {
+  display: none;
+}
+
 @media (max-width: $vp-1199) {
   .slider__item {
     max-width: 269px;
@@ -173,7 +207,7 @@
   .slider__item:active .slider__item-content,
   .slider__item:focus .slider__item-content,
   .slider__item:hover .slider__item-content {
-    padding: 32px 13px 37px;
+    padding: 16px 13px 37px;
   }
 
   .slider__item:active .slider__item-content h2,
@@ -186,5 +220,15 @@
   .slider__item:focus .slider__item-content-text p,
   .slider__item:hover .slider__item-content-text p {
     transform: translate(0px, -2px);
+  }
+
+  .slider__button.swiper-button-prev {
+    left: 7px;
+    top: 50%;
+  }
+
+  .slider__button.swiper-button-next {
+    right: 7px;
+    top: 50%;
   }
 }

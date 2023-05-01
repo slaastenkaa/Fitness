@@ -23,38 +23,6 @@
   position: relative;
 }
 
-.trainers__button {
-  background-color: $color-transparent;
-  border: none;
-  outline: none;
-}
-
-.trainers__button svg {
-  color: $color-dark-grey;
-  transition: $trans-easeinout;
-}
-
-.trainers__button:hover svg,
-.trainers__button:focus svg,
-.trainers__button:active svg {
-  color: $color-sapphire;
-  transform: scale3d(1.5, 1.5, 1.5);
-}
-
-.trainers__button.swiper-button-prev {
-  left: 41px;
-}
-
-.trainers__button.swiper-button-next {
-  right: 41px;
-  transform: rotate(180deg);
-}
-
-.trainers__button::after {
-  display: none;
-}
-
-
 @media (max-width: $vp-1199) {
   .trainers {
     padding-bottom: 84px;
@@ -76,7 +44,7 @@
 
 @media (max-width: $vp-767) {
   .trainers {
-    padding-bottom: 52px;
+    padding-bottom: 54px;
   }
 
   .trainers__container h2 {
@@ -87,16 +55,6 @@
 
   .trainers__content {
     padding: 0 48px;
-  }
-
-  .trainers__button.swiper-button-prev {
-    left: 7px;
-    top: 50%;
-  }
-
-  .trainers__button.swiper-button-next {
-    right: 7px;
-    top: 50%;
   }
 
   .trainers__button svg {

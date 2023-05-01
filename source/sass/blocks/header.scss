@@ -73,10 +73,23 @@
   transform: translate(0px, -2px);
 }
 
+.header__content--image {
+  width: 71.5%;
+  min-height: 556px;
+  height: 100%;
+  background-color: $color-chambray;
+}
+
+.header__content--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: $vp-1199) {
   .header {
     padding-top: 34px;
-    padding-bottom: 94px;
+    padding-bottom: 95px;
     background: $conic-gradient-tablet;
   }
 
@@ -121,9 +134,14 @@
 
   .header__content--button {
     margin: auto;
-    padding: 19px;
+    padding: 21px 19px 19px;
     width: 96%;
-    transform: translate(0, -15px);
+    transform: translate(0, -13px);
+  }
+
+  .header__content--image {
+    width: 100%;
+    min-height: 390px;
   }
 }
 

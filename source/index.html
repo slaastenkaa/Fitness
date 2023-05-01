@@ -283,16 +283,15 @@
         <div class="container trainers__container">
           <h2>Тренеры</h2>
         </div>
-        <div class="trainers__content">
-          <button class="trainers__button trainers__button--prev swiper-button-prev" type="button">
+        <div class="trainers__content slider">
+          <button class="trainers__button--prev slider__button swiper-button-prev" type="button">
             <svg width="16" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-arrow"></use>
             </svg>
             <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-          <div class="trainers__slider slider swiper">
+          <div class="trainers__slider swiper">
             <ul class="slider__list swiper-wrapper">
-              <!-- Анна Павлова -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -313,7 +312,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Алексей Лавров -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -334,7 +332,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Александр Пашков -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -355,7 +352,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Мария Кетова -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -376,7 +372,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Александр Пашков -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -397,7 +392,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Александр Пашков -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -418,7 +412,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Мария Кетова -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -439,7 +432,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Мария Кетова -->
               <li class="slider__item swiper-slide" tabindex="0">
                 <div class="slider__item-picture">
                   <picture>
@@ -462,7 +454,7 @@
               </li>
             </ul>
           </div>
-          <button class="trainers__button trainers__button--next swiper-button-next" type="button">
+          <button class="trainers__button--next slider__button swiper-button-next" type="button">
             <svg width="16" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="./img/sprite.svg#icon-arrow"></use>
             </svg>
@@ -510,7 +502,7 @@
               </div>
               <div class="advantages__item-content">
                 <h4>Комфорт</h4>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                <p>Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
               </div>
             </li>
             <li class="advantages__item experience">
@@ -526,10 +518,169 @@
           </ul>
         </div>
       </section>
-      <section class="stock"></section>
-      <section class="stock"></section>
-      <section class="reviews"></section>
-      <section class="contact"></section>
+      <section class="stock">
+        <div class="container stock__container">
+          <h2>Акции</h2>
+          <div class="stock__content">
+            <article class="stock__content-proposal">
+              <div class="stock__content-proposal-main">
+                <h4>Год</h4>
+                <span>4999</span>
+                <p>Безлимитный абонемент в тренажерный зал</p>
+                <a class="stock__content-proposal-button button" href="#">подробнее</a>
+              </div>
+              <div class="stock__content-proposal-image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/img-stock-woman-mobil.webp 1x, img/img-stock-woman-mobil@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/img-stock-woman-tablet.webp, img/img-stock-woman-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/img-stock-woman.webp, img/img-stock-woman@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/img-stock-woman-mobil.jpg 1x, img/img-stock-woman-mobil@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="img/img-stock-woman-tablet.jpg, img/img-stock-woman-tablet@2x.jpg 2x">
+                  <img src="img/img-stock-woman.jpg" width="280" height="462" alt="Акции фитнес центра 'SuperGym'."
+                    srcset="img/img-stock-woman@2x.jpg 2x">
+                </picture>
+              </div>
+            </article>
+            <ul class="stock__content-list list">
+              <li class="stock__content-item">
+                <h4>Месяц бесплатно</h4>
+                <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                <a class="stock__content-button button" href="#">подробнее</a>
+              </li>
+              <li class="stock__content-item">
+                <h4>Скидка 20%</h4>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+                <a class="stock__content-button button" href="#">подробнее</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container reviews__container">
+          <h2>Отзывы</h2>
+          <div class="reviews__content">
+            <button class="reviews__button--prev slider__button swiper-button-prev" type="button">
+              <svg width="16" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <div class="reviews__slider slider swiper">
+              <ul class="reviews__list list swiper-wrapper">
+                <li class="reviews__item swiper-slide" tabindex="0">
+                  <div class="reviews__item-picture">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/img-reviews-woman-mobil.webp 1x, img/img-reviews-woman-mobil@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)"
+                        srcset="img/img-reviews-woman-tablet.webp, img/img-reviews-woman-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/img-reviews-woman.webp, img/img-reviews-woman@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/img-reviews-woman-mobil.jpg 1x, img/img-reviews-woman-mobil@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/img-reviews-woman-tablet.jpg, img/img-reviews-woman-tablet@2x.jpg 2x">
+                      <img src="img/img-reviews-woman.jpg" width="80" height="80" alt="Анна Орлова, посетитель фитнес центра 'SuperGym'."
+                        srcset="img/img-reviews-woman@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide" tabindex="0">
+                  <div class="reviews__item-picture">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/img-reviews-woman-mobil.webp 1x, img/img-reviews-woman-mobil@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)"
+                        srcset="img/img-reviews-woman-tablet.webp, img/img-reviews-woman-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/img-reviews-woman.webp, img/img-reviews-woman@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/img-reviews-woman-mobil.jpg 1x, img/img-reviews-woman-mobil@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/img-reviews-woman-tablet.jpg, img/img-reviews-woman-tablet@2x.jpg 2x">
+                      <img src="img/img-reviews-woman.jpg" width="80" height="80" alt="Анна Орлова, посетитель фитнес центра 'SuperGym'."
+                        srcset="img/img-reviews-woman@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide" tabindex="0">
+                  <div class="reviews__item-picture">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/img-reviews-woman-mobil.webp 1x, img/img-reviews-woman-mobil@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)"
+                        srcset="img/img-reviews-woman-tablet.webp, img/img-reviews-woman-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/img-reviews-woman.webp, img/img-reviews-woman@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/img-reviews-woman-mobil.jpg 1x, img/img-reviews-woman-mobil@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/img-reviews-woman-tablet.jpg, img/img-reviews-woman-tablet@2x.jpg 2x">
+                      <img src="img/img-reviews-woman.jpg" width="80" height="80" alt="Анна Орлова, посетитель фитнес центра 'SuperGym'."
+                        srcset="img/img-reviews-woman@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="reviews__item-content">
+                    <h3>Анна Орлова</h3>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="reviews__button--next slider__button swiper-button-next" type="button">
+              <svg width="16" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <article class="contact__form">
+          <div class="contact__form-container" data-form-validate data-callback="base">
+            <h2>Бесплатное занятие</h2>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <label for="name" data-required data-validate-type="text"
+                  data-message-base="Данное поле необходимо заполнить">
+                  <input id="name" type="text" name="Name" placeholder="Имя" required>
+                  <span class="contact__form--span">Имя</span>
+                </label>
+                <label for="phone" data-required data-validate-type="phone"
+                  data-message-base="Данное поле необходимо заполнить">
+                  <input id="phone" type="tel" name="Phone" placeholder="Телефон" required>
+                  <span class="contact__form--span">Телефон</span>
+                </label>
+              <button class="contact__form-button button" type="submit">отправить</button>
+            </form>
+          </div>
+        </article>
+        <article class="contact__info">
+          <div class="contact__info-container">
+            <h2>Контакты</h2>
+            <ul class="contact__info-list list">
+              <li class="contact__info-item list-address">
+                <h4>Адрес:</h4>
+                <address>г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="contact__info-item list-time">
+                <h4>График работы:</h4>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contact__info-item list-phone">
+                <h4>Телефон:</h4>
+                <a class="link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contact__info-item list-email">
+                <h4>Email:</h4>
+                <a class="link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
     <footer class="footer">
       <div class="container"></div>
