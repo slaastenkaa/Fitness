@@ -52,6 +52,7 @@
 }
 
 .stock__content-proposal-main p {
+  margin-top: 16px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -75,6 +76,7 @@
 .stock__content-proposal-button:focus,
 .stock__content-proposal-button:active {
   padding: 2px 5px;
+  color: $color-crimson;
   background: $red-to-blue-numb;
   background-clip: text;
   -webkit-background-clip: text;
@@ -152,6 +154,7 @@
 .stock__content-button:focus,
 .stock__content-button:active {
   padding: 0 5px;
+  color: $color-crimson;
   background: $red-to-blue-numb;
   background-clip: text;
   -webkit-background-clip: text;
@@ -191,6 +194,10 @@
   .stock__content-item {
     min-height: 211px;
     padding: 14px 28px 29px;
+  }
+
+  .stock__content-item h4 {
+    margin-top: 8px;
   }
 }
 

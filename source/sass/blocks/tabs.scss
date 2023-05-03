@@ -41,6 +41,10 @@
 .tabs__control:focus,
 .tabs__control:active {
   color: $color-crimson;
+  background: $red-to-blue-numb;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
 

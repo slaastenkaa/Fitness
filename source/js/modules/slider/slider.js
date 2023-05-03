@@ -1,3 +1,5 @@
+import Swiper from '../../vendor/swiper';
+
 export function initSlider() {
   const trainersSlider = new Swiper('.trainers__slider', {
     direction: 'horizontal',
