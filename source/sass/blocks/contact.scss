@@ -80,10 +80,10 @@
   color: $color-default-white;
 }
 
-.contact__form--span {
+.contact__form-span {
   position: absolute;
   top: 8px;
-  left: 0px;
+  left: 0;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -105,9 +105,9 @@
   -webkit-text-fill-color: $color-crimson;
 }
 
-.contact__form-container input:focus+.contact__form--span,
-.contact__form-container input:focus-within+.contact__form--span,
-.contact__form-container input:not(:placeholder-shown)+.contact__form--span {
+.contact__form-container input:focus + .contact__form-span,
+.contact__form-container input:focus-within + .contact__form-span,
+.contact__form-container input:not(:placeholder-shown) + .contact__form-span {
   font-size: 10px;
   opacity: 1;
   background: $red-to-blue;
@@ -168,6 +168,7 @@
 .contact__info-item a {
   display: block;
   margin-top: 5px;
+  width: fit-content;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -213,18 +214,18 @@
   .contact__form-container,
   .contact__info-container {
     margin: auto;
-    padding: 27px 121px 71px 90px;
+    padding: 27px 121px 72px 90px;
   }
 
   .contact__info-container {
-    padding-bottom: 45px;
+    padding-bottom: 44px;
   }
 
   .contact__form-container h2 {
     margin-bottom: 29px;
     font-size: 42px;
     line-height: 50px;
-    letter-spacing: 0.022em;
+    letter-spacing: 0.02em;
   }
 
   .contact__form-container form {
@@ -273,7 +274,6 @@
 }
 
 @media (max-width: $vp-767) {
-
   .contact__form-container,
   .contact__info-container {
     padding: 37px 15px 72px;
@@ -301,12 +301,9 @@
   }
 
   .contact__info-container h2 {
+    margin-bottom: 20px;
     font-size: 32px;
     line-height: 38px;
-  }
-
-  .contact__info-container h2 {
-    margin-bottom: 20px;
   }
 
   .contact__info-list {

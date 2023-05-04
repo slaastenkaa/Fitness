@@ -219,7 +219,7 @@
   .slider__item:active .slider__item-content-text p,
   .slider__item:focus .slider__item-content-text p,
   .slider__item:hover .slider__item-content-text p {
-    transform: translate(0px, -2px);
+    transform: translate(0, -2px);
   }
 
   .slider__button.swiper-button-prev {

@@ -1,5 +1,3 @@
-import Swiper from '../../vendor/swiper';
-
 export function initSlider() {
   const trainersSlider = new Swiper('.trainers__slider', {
     direction: 'horizontal',
@@ -12,8 +10,8 @@ export function initSlider() {
     },
     speed: 400,
     navigation: {
-      nextEl: '.trainers__button--next',
-      prevEl: '.trainers__button--prev',
+      nextEl: '.trainers__button-next',
+      prevEl: '.trainers__button-prev',
     },
     breakpoints: {
       // when window width is >= 320px
@@ -43,8 +41,8 @@ export function initSlider() {
     // },
     // speed: 400,
     navigation: {
-      nextEl: '.reviews__button--next',
-      prevEl: '.reviews__button--prev',
+      nextEl: '.reviews__button-next',
+      prevEl: '.reviews__button-prev',
     },
   });
-};
+}

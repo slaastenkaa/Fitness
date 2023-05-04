@@ -14,13 +14,10 @@
 }
 
 .trainers__content {
+  position: relative;
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
-}
-
-.trainers__content {
-  position: relative;
 }
 
 @media (max-width: $vp-1199) {
@@ -38,7 +35,7 @@
   }
 
   .trainers__content {
-    padding: 0 102px;
+    padding: 0 98px;
   }
 }
 
