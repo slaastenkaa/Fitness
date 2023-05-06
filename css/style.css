@@ -1446,6 +1446,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 }
@@ -1568,9 +1569,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 45px;
 }
 
 .header {
@@ -1671,6 +1672,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
   -webkit-transform: translate(0, -2px);
   -ms-transform: translate(0, -2px);
   transform: translate(0, -2px);
@@ -1703,6 +1705,7 @@ button,
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 2%;
   z-index: 1;
 }
 
@@ -2645,7 +2648,7 @@ button,
   color: inherit;
 }
 
-.advantages__item.gym {
+.advantages__item.advantages__gym {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2672,11 +2675,11 @@ button,
   background: #1c3374;
 }
 
-.advantages__item.gym .advantages__item-inner {
+.advantages__item.advantages__gym .advantages__item-inner {
   margin-left: 0;
 }
 
-.advantages__item.gym .advantages__item-inner span {
+.advantages__item.advantages__gym .advantages__item-inner span {
   margin-top: 26px;
   font-size: 74px;
   line-height: 78px;
@@ -2685,23 +2688,23 @@ button,
   background-clip: text;
 }
 
-.advantages__item.gym .advantages__item-content {
+.advantages__item.advantages__gym .advantages__item-content {
   text-align: center;
 }
 
-.advantages__item.gym .advantages__item-content h4 {
+.advantages__item.advantages__gym .advantages__item-content h4 {
   margin-bottom: 33px;
   font-size: 26px;
   line-height: 34px;
 }
 
-.advantages__item.square,
-.advantages__item.parking {
+.advantages__item.advantages__square,
+.advantages__item.advantages__parking {
   position: relative;
 }
 
-.advantages__item.square::after,
-.advantages__item.parking::after {
+.advantages__item.advantages__square::after,
+.advantages__item.advantages__parking::after {
   content: "";
   position: absolute;
   left: 9px;
@@ -2711,12 +2714,12 @@ button,
   background-color: rgba(209, 10, 66, 0.2);
 }
 
-.advantages__item.parking::after {
+.advantages__item.advantages__parking::after {
   left: 28px;
 }
 
-.advantages__item.parking,
-.advantages__item.experience {
+.advantages__item.advantages__parking,
+.advantages__item.advantages__experience {
   -ms-grid-columns: 1fr 1.9fr;
   grid-template-columns: 1fr 1.9fr;
 }
@@ -4229,7 +4232,7 @@ button,
   }
 
   .games {
-    padding-top: 101px;
+    padding-top: 99px;
     padding-bottom: 70px;
   }
 
@@ -4339,22 +4342,22 @@ button,
   }
 
   .slider__item {
-    max-width: 269px;
+    max-width: 270px;
   }
 
   .slider__item-content h2 {
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     font-size: 18px;
     line-height: 27px;
-    -webkit-transform: translate(4px, 0);
-    -ms-transform: translate(4px, 0);
-    transform: translate(4px, 0);
+    -webkit-transform: translate(1px, 0);
+    -ms-transform: translate(1px, 0);
+    transform: translate(1px, 0);
   }
 
   .slider__item:active .slider__item-content,
   .slider__item:focus .slider__item-content,
   .slider__item:hover .slider__item-content {
-    padding: 24px 36px 37px;
+    padding: 30px 36px 35px;
   }
 
   .slider__item:active .slider__item-content h2,
@@ -4379,7 +4382,7 @@ button,
   }
 
   .advantages {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-bottom: 77px;
   }
 
@@ -4404,8 +4407,8 @@ button,
     grid-template-columns: 1fr 1.6fr;
   }
 
-  .advantages__item.experience,
-  .advantages__item.parking {
+  .advantages__item.advantages__experience,
+  .advantages__item.advantages__parking {
     -ms-grid-columns: 1fr 2.7fr;
     grid-template-columns: 1fr 2.7fr;
   }
@@ -4434,12 +4437,12 @@ button,
     margin-top: 1px;
   }
 
-  .advantages__item.parking::after,
-  .advantages__item.square::after {
+  .advantages__item.advantages__parking::after,
+  .advantages__item.advantages__square::after {
     display: none;
   }
 
-  .advantages__item.gym {
+  .advantages__item.advantages__gym {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -4454,7 +4457,7 @@ button,
     transform: translate(0, -8px);
   }
 
-  .advantages__item.gym .advantages__item-inner span {
+  .advantages__item.advantages__gym .advantages__item-inner span {
     margin-top: 7px;
     line-height: 74px;
     -webkit-transform: translate(-3px, 0);
@@ -4462,14 +4465,14 @@ button,
     transform: translate(-3px, 0);
   }
 
-  .advantages__item.gym .advantages__item-content h4 {
+  .advantages__item.advantages__gym .advantages__item-content h4 {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 33px;
   }
 
-  .advantages__item.gym .advantages__item-content p {
+  .advantages__item.advantages__gym .advantages__item-content p {
     margin: auto;
     width: 54%;
   }
@@ -4516,7 +4519,7 @@ button,
 
   .reviews {
     padding-top: 7px;
-    padding-bottom: 99px;
+    padding-bottom: 100px;
   }
 
   .reviews h2 {
@@ -4769,7 +4772,7 @@ button,
   }
 
   .gym__image-video {
-    margin-top: 0px;
+    margin-top: 0;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -4898,7 +4901,7 @@ button,
   }
 
   .games__invite {
-    padding: 54px 45px 52px;
+    padding: 54px 45px 53px;
   }
 
   .games__image {
@@ -5003,8 +5006,8 @@ button,
     text-align: center;
   }
 
-  .advantages__item.experience,
-  .advantages__item.parking {
+  .advantages__item.advantages__experience,
+  .advantages__item.advantages__parking {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
@@ -5029,7 +5032,7 @@ button,
     margin: auto;
   }
 
-  .advantages__item.gym {
+  .advantages__item.advantages__gym {
     margin-top: 9px;
     margin-bottom: 6px;
     padding: 31px 22px 44px;
@@ -5042,11 +5045,11 @@ button,
     transform: translate(0, 0);
   }
 
-  .advantages__item.gym .advantages__item-inner {
+  .advantages__item.advantages__gym .advantages__item-inner {
     margin: auto;
   }
 
-  .advantages__item.gym .advantages__item-content h4 {
+  .advantages__item.advantages__gym .advantages__item-content h4 {
     margin-top: -5px;
     margin-bottom: 11px;
     -webkit-transform: translate(0, 0);
@@ -5054,7 +5057,7 @@ button,
     transform: translate(0, 0);
   }
 
-  .advantages__item.gym .advantages__item-content p {
+  .advantages__item.advantages__gym .advantages__item-content p {
     width: 70%;
   }
 
@@ -5112,7 +5115,7 @@ button,
 
   .reviews {
     padding-top: 17px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 
   .reviews h2 {
