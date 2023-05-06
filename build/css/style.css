@@ -3202,7 +3202,7 @@ button,
   color: inherit;
 }
 
-.advantages__item.advantages__gym {
+.advantages__item.advantages__item--gym {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3229,11 +3229,11 @@ button,
   background: #1c3374;
 }
 
-.advantages__item.advantages__gym .advantages__item-inner {
+.advantages__item.advantages__item--gym .advantages__item-inner {
   margin-left: 0;
 }
 
-.advantages__item.advantages__gym .advantages__item-inner span {
+.advantages__item.advantages__item--gym .advantages__item-inner span {
   margin-top: 26px;
   font-size: 74px;
   line-height: 78px;
@@ -3242,23 +3242,23 @@ button,
           background-clip: text;
 }
 
-.advantages__item.advantages__gym .advantages__item-content {
+.advantages__item.advantages__item--gym .advantages__item-content {
   text-align: center;
 }
 
-.advantages__item.advantages__gym .advantages__item-content h4 {
+.advantages__item.advantages__item--gym .advantages__item-content h4 {
   margin-bottom: 33px;
   font-size: 26px;
   line-height: 34px;
 }
 
-.advantages__item.advantages__square,
-.advantages__item.advantages__parking {
+.advantages__item.advantages__item--square,
+.advantages__item.advantages__item--parking {
   position: relative;
 }
 
-.advantages__item.advantages__square::after,
-.advantages__item.advantages__parking::after {
+.advantages__item.advantages__item--square::after,
+.advantages__item.advantages__item--parking::after {
   content: "";
   position: absolute;
   left: 9px;
@@ -3268,12 +3268,12 @@ button,
   background-color: rgba(209, 10, 66, 0.2);
 }
 
-.advantages__item.advantages__parking::after {
+.advantages__item.advantages__item--parking::after {
   left: 28px;
 }
 
-.advantages__item.advantages__parking,
-.advantages__item.advantages__experience {
+.advantages__item.advantages__item--parking,
+.advantages__item.advantages__item--experience {
   -ms-grid-columns: 1fr 1.9fr;
   grid-template-columns: 1fr 1.9fr;
 }
@@ -3301,8 +3301,8 @@ button,
     -ms-grid-columns: 1fr 1.6fr;
     grid-template-columns: 1fr 1.6fr;
   }
-  .advantages__item.advantages__experience,
-.advantages__item.advantages__parking {
+  .advantages__item.advantages__item--experience,
+.advantages__item.advantages__item--parking {
     -ms-grid-columns: 1fr 2.7fr;
     grid-template-columns: 1fr 2.7fr;
   }
@@ -3325,11 +3325,11 @@ button,
   .advantages__item-content p {
     margin-top: 1px;
   }
-  .advantages__item.advantages__parking::after,
-.advantages__item.advantages__square::after {
+  .advantages__item.advantages__item--parking::after,
+.advantages__item.advantages__item--square::after {
     display: none;
   }
-  .advantages__item.advantages__gym {
+  .advantages__item.advantages__item--gym {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -3343,20 +3343,20 @@ button,
         -ms-transform: translate(0, -8px);
             transform: translate(0, -8px);
   }
-  .advantages__item.advantages__gym .advantages__item-inner span {
+  .advantages__item.advantages__item--gym .advantages__item-inner span {
     margin-top: 7px;
     line-height: 74px;
     -webkit-transform: translate(-3px, 0);
         -ms-transform: translate(-3px, 0);
             transform: translate(-3px, 0);
   }
-  .advantages__item.advantages__gym .advantages__item-content h4 {
+  .advantages__item.advantages__item--gym .advantages__item-content h4 {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 33px;
   }
-  .advantages__item.advantages__gym .advantages__item-content p {
+  .advantages__item.advantages__item--gym .advantages__item-content p {
     margin: auto;
     width: 54%;
   }
@@ -3384,8 +3384,8 @@ button,
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .advantages__item.advantages__experience,
-.advantages__item.advantages__parking {
+  .advantages__item.advantages__item--experience,
+.advantages__item.advantages__item--parking {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
@@ -3406,7 +3406,7 @@ button,
     width: 73%;
     margin: auto;
   }
-  .advantages__item.advantages__gym {
+  .advantages__item.advantages__item--gym {
     margin-top: 9px;
     margin-bottom: 6px;
     padding: 31px 22px 44px;
@@ -3418,17 +3418,17 @@ button,
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  .advantages__item.advantages__gym .advantages__item-inner {
+  .advantages__item.advantages__item--gym .advantages__item-inner {
     margin: auto;
   }
-  .advantages__item.advantages__gym .advantages__item-content h4 {
+  .advantages__item.advantages__item--gym .advantages__item-content h4 {
     margin-top: -5px;
     margin-bottom: 11px;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  .advantages__item.advantages__gym .advantages__item-content p {
+  .advantages__item.advantages__item--gym .advantages__item-content p {
     width: 70%;
   }
 }
