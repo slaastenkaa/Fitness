@@ -138,7 +138,7 @@
   .games__invite {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     padding: 54px 45px;
   }
 
@@ -213,7 +213,7 @@
 
 @media (max-width: $vp-767) {
   .games {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     padding-top: 69px;
     padding-bottom: 33px;
   }

@@ -5,10 +5,6 @@ export function initSlider() {
     spaceBetween: 33,
     // centeredSlides: true,
     grabCursor: true, // менять иконку курсора
-    autoplay: {
-      delay: 5000,
-    },
-    speed: 400,
     navigation: {
       nextEl: '.trainers__button-next',
       prevEl: '.trainers__button-prev',
@@ -22,8 +18,12 @@ export function initSlider() {
       768: {
         slidesPerView: 2,
       },
+      // when window width is >= 768px
+      1050: {
+        slidesPerView: 3,
+      },
       // when window width is >= 1199px
-      1199: {
+      1220: {
         slidesPerView: 4,
         spaceBetween: 40,
       },
@@ -36,10 +36,6 @@ export function initSlider() {
     spaceBetween: 33,
     centeredSlides: true,
     grabCursor: true, // менять иконку курсора
-    // autoplay: {
-    //   delay: 5000,
-    // },
-    // speed: 400,
     navigation: {
       nextEl: '.reviews__button-next',
       prevEl: '.reviews__button-prev',
